@@ -1,0 +1,288 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sweet Accent</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Sweet <span>Accent</span></a>
+      <div class="menuToggle" onclick="toggleMenu()"></div>
+      <ul class="navigation">
+        <li><a href="#banner" onclick="toggleMenu()">Home</a></li>
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#menu" onclick="toggleMenu()">Services</a></li>
+        <li><a href="#expert" onclick="toggleMenu()">Gallery</a></li>
+        <li><a href="#testimonials" onclick="toggleMenu()">Testimonials</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </ul>
+    </header>
+
+    <section class="banner" id="banner">
+      <div class="content">
+        <h2>An Event You Will Never Forget</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, quas?
+          Cupiditate dolores nemo quas quidem alias eos obcaecati amet quisquam
+          neque praesentium voluptatem laudantium.
+        </p>
+        <a href="#" class="btn">Our Menu</a>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="row">
+        <div class="col50">
+          <h2 class="titleText"><span>A</span>bout Us</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Reprehenderit illum quae fugiat error aut, eos qui tenetur autem
+            velit unde quasi, impedit, aliquam adipisci pariatur maxime ea totam
+            temporibus corporis ipsa. Ipsam nulla eveniet minus distinctio
+            doloremque harum deserunt dolorem assumenda maxime amet laudantium
+            sit corporis totam, iste aspernatur soluta?<br /><br />
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta nemo
+            quibusdam beatae consequatur placeat, dolorem tenetur suscipit ex at
+            hic libero minus saepe sequi veniam aperiam unde, deleniti quos
+            exercitationem.lorem Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Atque sunt sint, aliquid saepe consectetur
+            molestias quas ipsum! Ut facilis libero cumque nostrum impedit?
+            Corrupti ab excepturi aspernatur assumenda sapiente reiciendis!
+          </p>
+        </div>
+        <div class="col50">
+          <div class="imgBx">
+            <img src="assets/table.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="menu" id="menu">
+      <div class="title">
+        <h2 class="titleText"><span>S</span>ervices</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
+          asperiores.
+        </p>
+      </div>
+      <div class="content">
+        <div class="box">
+          <div class="imgBx">
+            <img src="assets/location.jpg" alt="" />
+            <div class="centered">Location</div>
+          </div>
+          <!-- <div class="text">
+            <h3>Location</h3>
+          </div> -->
+        </div>
+        <div class="box">
+          <div class="imgBx">
+            <img src="assets/design2.jpg" alt="" />
+            <div class="centered">Design</div>
+          </div>
+          <!-- <div class="text">
+            <h3>Design</h3>
+          </div> -->
+        </div>
+        <div class="box">
+          <div class="imgBx">
+            <img src="assets/planning2.jpg" alt="" />
+            <div class="centered">Planning</div>
+          </div>
+          <!-- <div class="text">
+            <h3>Planning</h3>
+          </div> -->
+        </div>
+      </div>
+      <!-- <div class="title">
+        <a href="#" class="btn">View All</a>
+      </div> -->
+    </section>
+    <section class="expert" id="expert">
+      <div class="title">
+        <h2 class="titleText"><span>G</span>allery</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
+          asperiores.
+        </p>
+      </div>
+      <!-- Container for the image gallery -->
+      <div class="container">
+        <!-- Full-width images with number text -->
+        <div class="mySlides">
+          <div class="numbertext">1 / 2</div>
+          <img
+            class="galleryImg"
+            src="assets/gallery1.jpg"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 2</div>
+          <img src="assets/gallery2.jpg" style="width: 100%" />
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- Image text -->
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
+        <!-- Thumbnail images -->
+        <div class="thumbRow">
+          <div class="thumbColumn">
+            <img
+              class="demo cursor"
+              src="assets/gallery1.jpg"
+              style="width: 100%"
+              onclick="currentSlide(1)"
+              alt="The Woods"
+            />
+          </div>
+          <div class="thumbColumn">
+            <img
+              class="demo cursor"
+              src="assets/gallery2.jpg"
+              style="width: 100%"
+              onclick="currentSlide(2)"
+              alt="Cinque Terre"
+            />
+          </div>
+        </div>
+      </div>
+      <!--
+      <div class="title">
+        <h2 class="titleText"><span>G</span>allery</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
+          asperiores.
+        </p>
+      </div>
+       <div class="content">
+        <div class="box">
+          <div class="imgBx">
+            <img src="assets/gallery1.jpg" alt="" />
+          </div>
+          <div class="text">
+            <h3>Someone Famous</h3>
+          </div>
+        </div>
+        <div class="box">
+          <div class="imgBx">
+            <img src="assets/gallery2.jpg" alt="" />
+          </div>
+          <div class="text">
+            <h3>Someone Famous</h3>
+          </div>
+        </div>
+        <div class="box">
+          <div class="imgBx">
+            <img src="assets/expert3.jpg" alt="" />
+          </div>
+          <div class="text">
+            <h3>Someone Famous</h3>
+          </div>
+        </div>
+        <div class="box">
+          <div class="imgBx">
+            <img src="assets/expert4.jpg" alt="" />
+          </div>
+          <div class="text">
+            <h3>Someone Famous</h3>
+          </div>
+        </div>
+      </div> -->
+    </section>
+    <section class="testimonials" id="testimonials">
+      <div class="title white">
+        <h2 class="titleText">Client <span>T</span>estimonials</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
+          asperiores.
+        </p>
+      </div>
+      <div class="content">
+        <div class="box">
+          <div class="imgBx">
+            <img src="assets/testi1.jpg" alt="" />
+          </div>
+          <div class="text">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi
+              distinctio fugiat ipsam natus consequuntur facere, nam sit eum
+              aperiam. Alias velit labore in consequuntur quod officiis, culpa
+              nam suscipit consequatur.
+            </p>
+            <h3>Someone Famous</h3>
+          </div>
+        </div>
+        <div class="box">
+          <div class="imgBx">
+            <img src="assets/testi2.jpg" alt="" />
+          </div>
+          <div class="text">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi
+              distinctio fugiat ipsam natus consequuntur facere, nam sit eum
+              aperiam. Alias velit labore in consequuntur quod officiis, culpa
+              nam suscipit consequatur.
+            </p>
+            <h3>Someone Famous</h3>
+          </div>
+        </div>
+        <div class="box">
+          <div class="imgBx">
+            <img src="assets/testi3.jpg" alt="" />
+          </div>
+          <div class="text">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi
+              distinctio fugiat ipsam natus consequuntur facere, nam sit eum
+              aperiam. Alias velit labore in consequuntur quod officiis, culpa
+              nam suscipit consequatur.
+            </p>
+            <h3>Someone Famous</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="title">
+        <h2 class="titleText"><span>C</span>ontact</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
+          asperiores.
+        </p>
+      </div>
+      <div>
+        <img src="" alt="" srcset="" />
+      </div>
+      <div class="contactForm">
+        <h3>Send Message</h3>
+        <div class="inputBox">
+          <input type="text" placeholder="Name" />
+        </div>
+        <div class="inputBox">
+          <input type="text" placeholder="Email" />
+        </div>
+        <div class="inputBox">
+          <textarea placeholder="What can we do for you?"></textarea>
+        </div>
+        <div class="inputBox">
+          <input type="submit" value="Send" />
+        </div>
+      </div>
+    </section>
+
+    <div class="copyrightText">
+      <p>Copyright 2021 <a href="#"> James Baptiste </a></p>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

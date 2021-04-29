@@ -1,0 +1,618 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+p {
+  font-weight: 300;
+  color: #111;
+  justify-content: center;
+}
+
+body {
+  min-height: 1000px;
+}
+
+.banner {
+  background: url(assets/bg2.jpg);
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  transition: 3s linear;
+}
+
+.banner .content {
+  max-width: 900px;
+  text-align: center;
+}
+
+.banner .content h2 {
+  font-size: 5em;
+  color: #fff;
+}
+
+.banner .content p {
+  font-size: 1em;
+  color: #fff;
+}
+
+.btn {
+  font-size: 1em;
+  color: #fff;
+  background-color: #ff0157;
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 30px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  letter-spacing: 6px;
+}
+header {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+}
+
+header.sticky {
+  background: #fff;
+  padding: 10px 100px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 2em;
+}
+
+header.sticky .logo {
+  color: #111;
+}
+
+header .logo span {
+  color: #ff0157;
+}
+
+header .navigation {
+  position: relative;
+  display: flex;
+}
+
+header .navigation li {
+  margin-left: 30px;
+  list-style: none;
+}
+
+header .navigation li a {
+  justify-content: space-between;
+  color: #fff;
+  text-decoration: none;
+}
+
+header.sticky .navigation li a {
+  color: #111;
+}
+
+header .navigation li a:hover {
+  color: #ff0157;
+}
+
+ul li a {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+section {
+  padding: 100px;
+}
+
+.row {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.row .col50 {
+  position: relative;
+  width: 48%;
+}
+
+.titleText {
+  color: #111;
+  font-size: 2em;
+  font-weight: 300;
+}
+
+.titleText span {
+  color: #ff0157;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.row .col50 .imgBx {
+  position: relative;
+  width: 100%;
+  /* min-height: 300px; */
+  height: 100%;
+}
+
+.row .col50 .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* padding: 40px; */
+}
+
+.menu .content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.menu .content .box {
+  width: 340px;
+  margin: 20px;
+  border: 15px solid #fff;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+}
+
+.menu .content .box .imgBx {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  cursor: pointer;
+}
+.menu .content .box .imgBx:hover {
+  opacity: 0.5;
+  background: #000;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 3em;
+  font-weight: 700;
+  /* -webkit-text-stroke: 2px #fff; */
+}
+
+.menu .content .box .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.menu .content .box .text {
+  padding: 15px 0 5px;
+}
+
+/* .menu .content .box .text h3 {
+  font-weight: 400;
+  color: #111;
+} */
+
+.expert .content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 40px;
+}
+
+.expert .content .box {
+  width: 250px;
+  margin: 15px;
+}
+
+.expert .content .box .imgBx {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.expert .content .box .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.expert .content .box .text {
+  padding: 15px 0 5px;
+}
+
+.expert .content .box .text h3 {
+  font-weight: 400;
+  color: #111;
+}
+
+.testimonials {
+  background: url(assets/bg2.jpg);
+  background-size: cover;
+}
+
+.white .titleText,
+.white p {
+  color: #fff;
+}
+
+.testimonials .content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 40px;
+}
+
+.testimonials .content .box {
+  background: #fff;
+  width: 340px;
+  margin: 20px;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.testimonials .content .box .imgBx {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.testimonials .content .box .imgBx img {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonials .content .box .text {
+  text-align: center;
+}
+
+.testimonials .content .box .text p {
+  color: #666;
+  font-style: italic;
+}
+
+.testimonials .content .box .text h3 {
+  margin-top: 20px;
+  color: #111;
+  font-size: 1em;
+  color: #ff0157;
+  font-weight: 600;
+}
+
+.contact {
+  background: url(assets/contact.jpg);
+  background-size: cover;
+}
+
+.contactForm {
+  background: #fff;
+  padding: 75px 50px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+  max-width: 500px;
+  margin-left: auto;
+}
+
+.contactForm h3 {
+  color: #111;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.contactForm .inputBox {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+  width: 100%;
+  border: 1px solid #555;
+  padding: 10px;
+  color: #111;
+  outline: none;
+  font-size: 16px;
+  font-weight: 100;
+  resize: none;
+}
+
+.contactForm .inputBox input[type='submit'] {
+  font-size: 1em;
+  color: #fff;
+  background: #ff0157;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  max-width: 100px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+.copyrightText {
+  text-align: center;
+  padding: 10px 40px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.copyrightText p {
+  color: #333;
+}
+
+.copyrightText a {
+  text-decoration: none;
+  color: #ff0157;
+  font-weight: 500;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+.galleryImg {
+  margin-top: 40px;
+}
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #fff;
+  padding: 2px 16px;
+  color: #111;
+}
+
+.thumbRow:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.thumbColumn {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+@media (max-width: 991px) {
+  header,
+  header.sticky {
+    padding: 10px 20px;
+  }
+
+  header .navigation {
+    display: none;
+  }
+
+  header .navigation.active {
+    position: fixed;
+    width: 100%;
+    height: calc(100% - 67px);
+    background: #fff;
+    top: 67px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header .navigation.active li {
+    /* so its not invisible on scroll */
+    margin-left: 0;
+  }
+
+  header .navigation.active li a {
+    font-size: 2em;
+    font-weight: 400;
+    color: #111;
+  }
+
+  header .navigation.active li a:hover {
+    color: #ff0157;
+  }
+
+  .menuToggle {
+    background: url(assets/menu.png);
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+    z-index: 10000;
+  }
+
+  .menuToggle.active {
+    background: url(assets/close.png);
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+    cursor: pointer;
+  }
+
+  header.sticky .menuToggle {
+    filter: invert(1);
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  .banner .content h2 {
+    font-size: 3em;
+    color: #fff;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .row .col50 {
+    position: relative;
+    width: 100%;
+  }
+
+  .row .col50 .imgBx {
+    height: 300px;
+    margin-top: 20px;
+  }
+
+  .menu .content {
+    margin-top: 20px;
+  }
+
+  .menu .content .box {
+    margin: 10px;
+  }
+
+  .menu .content .box .imgBx {
+    height: 260px;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .titleText {
+    font-size: 1.8em;
+    line-height: 1.5em;
+    margin-bottom: 15px;
+    font-weight: 300;
+    margin-top: 60px;
+  }
+  .testimonials .content .box {
+    margin: 10px;
+    padding: 20px;
+  }
+  .contactForm {
+    padding: 35px 40px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .banner .content h2 {
+    font-size: 2.2em;
+    color: #fff;
+  }
+}
